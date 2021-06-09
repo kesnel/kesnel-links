@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<section class="LnK" id="LnK">
+    <div class="bg">
+        <div class="container">
+            <div class="ti_section">
+
+                <figure class="profil">
+                    <img src="{% static 'img/profil/kesnel-samuel-jean-philippe.jpeg' %}" alt="Profil picture of Kesnel Samuel Jean Philippe" class="avatar">
+                </figure>
+    
+                <div class="cardUp">
+                    <h2 class="name"> Kesnel Samuel Jean-Philippe </h2>
+                    <h4 class="pseudo"> @kesnelsamuel  </h4>
+                </div>
+    
+                <div class="cardDown">
+                    <div class="cardDownIN">
+                        <ul class="CardUl">
+                            <li class="CardUlLi">
+                                <a href="https://www.kesnel.me/" target="_blank" rel="noopener noreferrer" class="CardLiA"> 
+                                <span class="text"> Personal Website </span>
+                                </a>
+                            </li>
+                            <li class="CardUlLi">
+                                <a href="https://www.instagram.com/kesnelsamuel/" target="_blank" rel="noopener noreferrer" class="CardLiA"> 
+                                <span class="text"> Follow me on Instagram </span>
+                                </a>
+                            </li>
+                            <li class="CardUlLi">
+                                <a href="https://www.linkedin.com/in/kesnel-s-jean-philippe-7ba515169/" target="_blank" rel="noopener noreferrer" class="CardLiA"> 
+                                <span class="text"> Connect with me on LinkedIn </span>
+                                </a>
+                            </li>
+                            <li class="CardUlLi">
+                                <a href="https://facebook.com/kesnelsjp" target="_blank" rel="noopener noreferrer" class="CardLiA"> 
+                                <span class="text"> Add me on facebook </span>
+                                </a>
+                            </li>
+                            <li class="CardUlLi">
+                                <a href="https://twitter.com/kesnelsamuel" target="_blank" rel="noopener noreferrer" class="CardLiA"> 
+                                <span class="text"> Follow me on twitter </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="cardFooter">
+                    <p class="cc"> © {% now 'Y' %} <span class="break"> Kesnel Samuel </span>. All right reserved </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
