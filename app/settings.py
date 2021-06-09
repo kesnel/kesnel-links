@@ -25,7 +25,12 @@ SECRET_KEY = '6dk(+dubmyw1&8_=j5fnf2!54=qt)hl9x^o(y#69__x$y6n@fe'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'kesnel.link',
+    'www.kesnel.link',
+    '127.0.0.1',
+    'localhost'
+]
 
 
 # Application definition
