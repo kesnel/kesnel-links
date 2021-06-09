@@ -6,7 +6,7 @@
 @import url('../../fonts/caros/stylesheet.css');
 
 /** Pages **/
-@import url('../style/landing/index.css');
+@import url('../style/index.css');
 
 :root{
 /** Color Principal **/ 
@@ -44,8 +44,78 @@
 /** Layout **/
 
 .container{
-    width: 1200px;
-    height: 100%;
-
     margin: 0 auto;
+    height: 100%;
+    width: 1200px;
+}
+
+.cardDown{
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .cardDown{
+        width: 50%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    body{
+        font-size: 15px;
+    }
+
+    .cardDown{
+        width: 88%;
+    }
+
+    .profil{
+        width: 80px;
+        height: 80px;
+    }
+
+    .cardUp{
+        padding-top: 15px;
+    }
+    
+    .cardUp .name{
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+    .cardUp .pseudo{
+        font-size: 13px;
+    }
+
+    .cardDown{
+        padding-top: 10px;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .CardUlLi{
+        margin: 14px 0;
+    }
+
+    .CardLiA{
+        padding: 14px 0;
+        font-weight: 500;
+    }
+
+    .cardFooter{
+        padding-top: 45px;
+    }
+
+    .cardFooter .cc{
+        font-size: 12px;
+        font-weight: 600;
+        font-family: var(--f-keke);
+    }
+
 }
